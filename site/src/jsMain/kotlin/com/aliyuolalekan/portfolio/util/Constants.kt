@@ -20,5 +20,26 @@ object Res {
         const val background = "background.svg"
         const val logo = "logo.svg"
         const val mainImage = "main_image.png"
+        const val aboutImage = "about_image.png"
+        const val portfolio1 = "portfolio1.png"
+        const val portfolio2 = "portfolio2.png"
+        const val portfolio3 = "portfolio3.png"
+        const val portfolio4 = "portfolio4.jpg"
+        const val portfolio5 = "portfolio5.png"
+        const val avatar1 = "avatar1.png"
+        const val avatar2 = "avatar2.png"
+        const val avatar3 = "avatar3.png"
+        const val avatar4 = "avatar4.png"
+        const val avatar5 = "avatar5.png"
+        const val avatar6 = "avatar6.png"
+    }
+
+    object Icon {
+        const val android = "android_icon.svg"
+        const val apple = "apple_icon.svg"
+        const val backend = "business_icon.svg"
+        const val design = "design_icon.svg"
+        const val link = "link_icon.svg"
+        const val star = "star_icon.svg"
     }
 }

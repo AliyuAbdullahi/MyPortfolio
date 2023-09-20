@@ -6,7 +6,11 @@ import com.varabyte.kobweb.compose.ui.modifiers.margin
 import com.varabyte.kobweb.core.Page
 import com.varabyte.kobweb.silk.components.forms.TextInput
 import com.aliyuolalekan.portfolio.components.layouts.PageLayout
+import com.aliyuolalekan.portfolio.components.sections.AboutSection
 import com.aliyuolalekan.portfolio.components.sections.MainSection
+import com.aliyuolalekan.portfolio.components.sections.PortfolioSection
+import com.aliyuolalekan.portfolio.components.sections.ServiceSection
+import com.aliyuolalekan.portfolio.components.sections.TestimonialSection
 import com.varabyte.kobweb.compose.foundation.layout.Arrangement
 import com.varabyte.kobweb.compose.foundation.layout.Column
 import com.varabyte.kobweb.compose.ui.Alignment
@@ -24,5 +28,9 @@ fun HomePage() {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         MainSection()
+        AboutSection()
+        ServiceSection()
+        PortfolioSection()
+        TestimonialSection()
     }
 }
