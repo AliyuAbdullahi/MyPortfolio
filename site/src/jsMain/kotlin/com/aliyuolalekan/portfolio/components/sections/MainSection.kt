@@ -37,6 +37,7 @@ import com.varabyte.kobweb.compose.ui.modifiers.fontSize
 import com.varabyte.kobweb.compose.ui.modifiers.fontStyle
 import com.varabyte.kobweb.compose.ui.modifiers.fontWeight
 import com.varabyte.kobweb.compose.ui.modifiers.height
+import com.varabyte.kobweb.compose.ui.modifiers.id
 import com.varabyte.kobweb.compose.ui.modifiers.margin
 import com.varabyte.kobweb.compose.ui.modifiers.maxWidth
 import com.varabyte.kobweb.compose.ui.modifiers.objectFit
@@ -58,12 +59,13 @@ import org.jetbrains.compose.web.dom.Text
 @Composable
 fun MainSection() {
     Box(
-        modifier = Modifier.maxWidth(SECTION_WIDTH.px),
+        modifier = Modifier
+            .id(Section.Home.id)
+            .maxWidth(SECTION_WIDTH.px),
         contentAlignment = Alignment.TopCenter
     ) {
-        val breakpoint by rememberBreakpoint()
         MainBackground()
-        MainContent(breakpoint)
+        MainContent()
     }
 }
 
@@ -77,7 +79,8 @@ fun MainBackground() {
 }
 
 @Composable
-fun MainContent(breakpoint: Breakpoint) {
+fun MainContent() {
+    val breakpoint = rememberBreakpoint()
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.SpaceBetween,

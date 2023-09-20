@@ -33,7 +33,7 @@ import org.jetbrains.compose.web.css.px
 
 @Composable
 fun Header() {
-    val breakPoint by rememberBreakpoint()
+    val breakPoint = rememberBreakpoint()
 
     Row(
         modifier = Modifier.fillMaxWidth(
