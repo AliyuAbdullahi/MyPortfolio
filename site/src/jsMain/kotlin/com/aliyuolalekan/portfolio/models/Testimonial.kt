@@ -12,7 +12,7 @@ enum class Testimonial(
     First(
         image = Res.Image.avatar1,
         fullName = "Kola Emilola",
-        profession = "Web Designer",
+        profession = "Senior Android Developer",
         review = LOREM_IPSUM_SHORT
     ),
     Second(

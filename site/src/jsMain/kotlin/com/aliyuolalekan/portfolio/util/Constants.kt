@@ -2,7 +2,7 @@ package com.aliyuolalekan.portfolio.util
 
 object Constants {
     const val SECTION_WIDTH = 1920
-    const val FONT_FAMILY = "Montserrat"
+    const val FONT_FAMILY = "Georgia"
 
     const val LINKED_IN_PROFILE = "https://www.linkedin.com/in/aliyu-olalekan-abdullahi/"
     const val TWITTER = "https://twitter.com/AliyuOAbdullahi"

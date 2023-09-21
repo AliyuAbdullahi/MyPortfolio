@@ -82,7 +82,7 @@ fun RightSide() {
         modifier = Modifier
             .fillMaxWidth()
             .borderRadius(50.px)
-            .backgroundColor(Theme.LightGray.rgb)
+            .backgroundColor(Theme.LighterGray.rgb)
             .padding(all = 20.px),
         horizontalArrangement = Arrangement.End
     ) {
