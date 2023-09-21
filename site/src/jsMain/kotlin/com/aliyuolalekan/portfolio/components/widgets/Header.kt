@@ -20,10 +20,12 @@ import com.varabyte.kobweb.compose.ui.modifiers.fontFamily
 import com.varabyte.kobweb.compose.ui.modifiers.fontSize
 import com.varabyte.kobweb.compose.ui.modifiers.fontWeight
 import com.varabyte.kobweb.compose.ui.modifiers.margin
+import com.varabyte.kobweb.compose.ui.modifiers.onClick
 import com.varabyte.kobweb.compose.ui.modifiers.padding
 import com.varabyte.kobweb.compose.ui.modifiers.textDecorationLine
 import com.varabyte.kobweb.silk.components.graphics.Image
 import com.varabyte.kobweb.silk.components.icons.fa.FaBars
+import com.varabyte.kobweb.silk.components.icons.fa.IconSize
 import com.varabyte.kobweb.silk.components.navigation.Link
 import com.varabyte.kobweb.silk.components.style.breakpoint.Breakpoint
 import com.varabyte.kobweb.silk.components.style.toModifier
@@ -32,7 +34,7 @@ import org.jetbrains.compose.web.css.percent
 import org.jetbrains.compose.web.css.px
 
 @Composable
-fun Header() {
+fun Header(onMenuClicked: () -> Unit) {
     val breakPoint = rememberBreakpoint()
 
     Row(
@@ -43,7 +45,7 @@ fun Header() {
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
-        LeftSide(breakPoint)
+        LeftSide(breakpoint = breakPoint, onMenuClicked = onMenuClicked)
         if (breakPoint > Breakpoint.MD) {
             RightSide()
         }
@@ -51,16 +53,26 @@ fun Header() {
 }
 
 @Composable
-fun LeftSide(breakpoint: Breakpoint) {
-    Row(
-        verticalAlignment = Alignment.CenterVertically
-    ) {
-        if (breakpoint < Breakpoint.MD) {
+fun LeftSide(
+    breakpoint: Breakpoint,
+    onMenuClicked: () -> Unit
+) {
+    Row(verticalAlignment = Alignment.CenterVertically) {
+        if (breakpoint <= Breakpoint.MD) {
             FaBars(
-                modifier = Modifier.margin(right = 15.px)
+                modifier = Modifier
+                    .margin(right = 15.px)
+                    .onClick {
+                        onMenuClicked()
+                    },
+                size = IconSize.XL
             )
         }
-        Image(src = Res.Image.logo, modifier = LogoStyle.toModifier())
+        Image(
+            modifier = LogoStyle.toModifier(),
+            src = Res.Image.logo,
+            desc = "Logo Image"
+        )
     }
 }
 

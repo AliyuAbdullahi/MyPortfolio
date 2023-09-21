@@ -57,7 +57,7 @@ import org.jetbrains.compose.web.dom.P
 import org.jetbrains.compose.web.dom.Text
 
 @Composable
-fun MainSection() {
+fun MainSection(onMenuClicked: () -> Unit) {
     Box(
         modifier = Modifier
             .id(Section.Home.id)
@@ -65,12 +65,12 @@ fun MainSection() {
         contentAlignment = Alignment.TopCenter
     ) {
         MainBackground()
-        MainContent()
+        MainContent(onMenuClicked)
     }
 }
 
 @Composable
-fun MainBackground() {
+private fun MainBackground() {
     Image(
         modifier = Modifier.fillMaxSize().objectFit(ObjectFit.Cover),
         src = Res.Image.background,
@@ -79,14 +79,14 @@ fun MainBackground() {
 }
 
 @Composable
-fun MainContent() {
+private fun MainContent(onMenuClicked: () -> Unit) {
     val breakpoint = rememberBreakpoint()
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.SpaceBetween,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Header()
+        Header(onMenuClicked)
         Column(
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.Bottom,
@@ -107,7 +107,7 @@ fun MainContent() {
 }
 
 @Composable
-fun MainText(breakpoint: Breakpoint) {
+private fun MainText(breakpoint: Breakpoint) {
     Row(
         horizontalArrangement = Arrangement.Center,
         verticalAlignment = Alignment.CenterVertically
@@ -196,7 +196,7 @@ fun MainText(breakpoint: Breakpoint) {
 }
 
 @Composable
-fun MainImage() {
+private fun MainImage() {
     Column(
         modifier = Modifier.fillMaxSize(80.percent).fillMaxHeight(),
         verticalArrangement = Arrangement.Bottom

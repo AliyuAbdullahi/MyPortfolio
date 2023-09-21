@@ -1,18 +1,27 @@
 package com.aliyuolalekan.portfolio.components.layouts
 
-import androidx.compose.runtime.*
-import com.varabyte.kobweb.compose.css.*
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import com.aliyuolalekan.portfolio.components.sections.NavHeader
+import com.varabyte.kobweb.compose.css.TextAlign
 import com.varabyte.kobweb.compose.foundation.layout.Box
 import com.varabyte.kobweb.compose.foundation.layout.Column
 import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
-import com.varabyte.kobweb.compose.ui.modifiers.*
+import com.varabyte.kobweb.compose.ui.modifiers.fillMaxSize
+import com.varabyte.kobweb.compose.ui.modifiers.fillMaxWidth
+import com.varabyte.kobweb.compose.ui.modifiers.gridTemplateRows
+import com.varabyte.kobweb.compose.ui.modifiers.minHeight
+import com.varabyte.kobweb.compose.ui.modifiers.textAlign
 import kotlinx.browser.document
-import org.jetbrains.compose.web.css.*
-import org.jetbrains.compose.web.dom.*
-import com.aliyuolalekan.portfolio.components.sections.Footer
-import com.aliyuolalekan.portfolio.components.sections.NavHeader
+import org.jetbrains.compose.web.css.fr
+import org.jetbrains.compose.web.css.percent
+import org.jetbrains.compose.web.dom.H1
+import org.jetbrains.compose.web.dom.Text
 
+/**
+ * This File is not used but it's required by the framework
+ */
 @Composable
 fun PageLayout(title: String, content: @Composable () -> Unit) {
     LaunchedEffect(title) {
@@ -37,7 +46,5 @@ fun PageLayout(title: String, content: @Composable () -> Unit) {
             H1 { Text(title) }
             content()
         }
-        // Associate the footer with the row that will get pushed off the bottom of the page if it can't fit.
-        Footer(Modifier.align(Alignment.Center).gridRow(2, 3))
     }
 }

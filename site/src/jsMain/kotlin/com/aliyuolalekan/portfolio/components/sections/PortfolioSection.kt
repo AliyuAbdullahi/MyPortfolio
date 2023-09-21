@@ -49,7 +49,7 @@ fun PortfolioSection() {
 }
 
 @Composable
-fun PortfolioContent() {
+private fun PortfolioContent() {
     val breakpoint = rememberBreakpoint()
     Column(
         modifier = Modifier
@@ -71,7 +71,7 @@ fun PortfolioContent() {
 }
 
 @Composable
-fun PortfolioCards(breakpoint: Breakpoint) {
+private fun PortfolioCards(breakpoint: Breakpoint) {
     Row(
         modifier = Modifier
             .id("scrollableContainer")
@@ -97,7 +97,7 @@ fun PortfolioCards(breakpoint: Breakpoint) {
 }
 
 @Composable
-fun PortfolioNavigation() {
+private fun PortfolioNavigation() {
     Row(
         modifier = Modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.Center
