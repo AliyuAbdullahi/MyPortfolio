@@ -57,7 +57,7 @@ fun TestimonialSection() {
 }
 
 @Composable
-fun TestimonialContent() {
+private fun TestimonialContent() {
     val breakpoint = rememberBreakpoint()
     var selectedPage by remember { mutableStateOf(0) }
     Column(
@@ -90,7 +90,7 @@ fun TestimonialContent() {
 }
 
 @Composable
-fun TestimonialCards(
+private fun TestimonialCards(
     breakpoint: Breakpoint,
     selectedPage: Int
 ) {
@@ -167,7 +167,7 @@ fun TestimonialCards(
 }
 
 @Composable
-fun TestimonialNavigation(
+private fun TestimonialNavigation(
     selectedPage: Int,
     onNavigate: (Int) -> Unit
 ) {
