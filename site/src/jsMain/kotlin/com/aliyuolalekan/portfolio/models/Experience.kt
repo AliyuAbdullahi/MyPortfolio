@@ -1,6 +1,8 @@
 package com.aliyuolalekan.portfolio.models
 
-import com.aliyuolalekan.portfolio.util.Constants.LOREM_IPSUM_LONG
+import com.aliyuolalekan.portfolio.util.Constants.ANDELA_ROLE
+import com.aliyuolalekan.portfolio.util.Constants.FREE_NOW_ROLE
+import com.aliyuolalekan.portfolio.util.Constants.HOLIDAY_PIRATES_ROLE
 
 enum class Experience(
     val number: String,
@@ -12,26 +14,26 @@ enum class Experience(
 ) {
     First(
         number = "01",
-        jobPosition = "Kotlin Multi-Platform Developer",
-        description = LOREM_IPSUM_LONG,
-        company = "Google",
-        from = "February 2022",
+        jobPosition = "Senior Android Developer",
+        description = HOLIDAY_PIRATES_ROLE,
+        company = "Holiday Pirates",
+        from = "June 2023",
         to = "NOW",
     ),
     Second(
         number = "02",
-        jobPosition = "Mobile Developer",
-        description = LOREM_IPSUM_LONG,
-        company = "Facebook",
-        from = "January 2021",
-        to = "October 2021",
+        jobPosition = "Software Engineer",
+        description = FREE_NOW_ROLE,
+        company = "FREE NOW",
+        from = "March 2020",
+        to = "June 2023",
     ),
     Third(
         number = "03",
-        jobPosition = "Freelancer",
-        description = LOREM_IPSUM_LONG,
-        company = "Netflix",
-        from = "March 2020",
-        to = "August 2020",
+        jobPosition = "Software Engineer | Senior Software Engineer",
+        description = ANDELA_ROLE,
+        company = "Andela",
+        from = "March 2015",
+        to = "February 2020",
     )
 }

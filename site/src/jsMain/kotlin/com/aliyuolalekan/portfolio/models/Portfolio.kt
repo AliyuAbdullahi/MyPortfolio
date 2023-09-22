@@ -39,7 +39,7 @@ enum class Portfolio(
         link = "https://play.google.com/store/apps/details?id=com.joelapenna.foursquared&hl=en&gl=US"
     ),
     Six(
-        image = Res.Image.portfolio5,
+        image = Res.Image.portfolio6,
         title = "Pilgrim SDK",
         description = "Android, iOS, React Native",
         link = "https://location.foursquare.com/developer/docs/pilgrim-sdk-overview"

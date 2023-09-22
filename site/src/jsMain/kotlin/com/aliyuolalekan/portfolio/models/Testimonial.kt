@@ -7,42 +7,49 @@ enum class Testimonial(
     val image: String,
     val fullName: String,
     val profession: String,
-    val review: String
+    val review: String,
+    val rating: Float
 ) {
     First(
         image = Res.Image.avatar1,
-        fullName = "Kola Emilola",
-        profession = "Senior Android Developer",
-        review = LOREM_IPSUM_SHORT
+        fullName = "Óscar Grande",
+        profession = "Senior Android Engineer, FREENOW",
+        review = "Pending",
+        rating = 5.0F
     ),
     Second(
         image = Res.Image.avatar2,
-        fullName = "Samira",
-        profession = "Android Developer",
-        review = LOREM_IPSUM_SHORT
+        fullName = "Idris Adetunbi",
+        profession = "Mobile Software Engineer, Trivago",
+        review = "An exceptional, energetic software engineer",
+        rating = 5.0F
     ),
     Third(
         image = Res.Image.avatar3,
-        fullName = "Christian Dehnin",
-        profession = "Business Analyst",
-        review = LOREM_IPSUM_SHORT
+        fullName = "Samira Badamestani",
+        profession = "Senior Android Developer",
+        review = "Pending",
+        rating = 5.0F
     ),
     Fourth(
         image = Res.Image.avatar4,
-        fullName = "Idris",
-        profession = "Top Manager",
-        review = LOREM_IPSUM_SHORT
+        fullName = "Jessica Lorena",
+        profession = "Senior Android Engineer FREENOW",
+        review = "Pending",
+        rating = 4.7F
     ),
     Fifth(
         image = Res.Image.avatar5,
-        fullName = "Oscar",
-        profession = "HR Recruiter",
-        review = LOREM_IPSUM_SHORT
+        fullName = "Kola Emilola",
+        profession = "Senior Android Engineer Trade Republic",
+        review = "Pending",
+        rating = 5.0F
     ),
     Sixth(
         image = Res.Image.avatar6,
-        fullName = "Abdulkadri",
-        profession = "Cyber Security Analyst",
-        review = LOREM_IPSUM_SHORT
+        fullName = "Jannik Hell",
+        profession = "Senior Software Engineer at FREENOW",
+        review = "Pending",
+        rating = 4.0F
     )
 }

@@ -10,14 +10,24 @@ import com.varabyte.kobweb.silk.components.graphics.Image
 import org.jetbrains.compose.web.css.px
 
 @Composable
-fun RatingBar(modifier: Modifier = Modifier) {
+fun RatingBar(modifier: Modifier = Modifier, rating: Float = 5.0F) {
+    val count = rating.toInt()
+    val hasOffset = (rating - count) > 0.1
     Row(modifier = modifier) {
-        repeat(5) {
+        repeat(count) {
             Image(
                 modifier = Modifier
-                    .margin(right = if (it != 4) 2.px else 4.px)
+                    .margin(right = if (hasOffset.not() && it != 4) 2.px else 4.px)
                     .size(16.px),
                 src = Res.Icon.star
+            )
+        }
+        if (hasOffset) {
+            Image(
+                modifier = Modifier
+                    .margin(right = 2.px)
+                    .size(16.px),
+                src = Res.Icon.half_star
             )
         }
     }

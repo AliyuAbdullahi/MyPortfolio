@@ -8,7 +8,8 @@ import com.aliyuolalekan.portfolio.models.Theme
 import com.aliyuolalekan.portfolio.styles.MainButtonStyle
 import com.aliyuolalekan.portfolio.styles.MainImageStyle
 import com.aliyuolalekan.portfolio.util.Constants.FONT_FAMILY
-import com.aliyuolalekan.portfolio.util.Constants.LOREM_IPSUM_SHORTEST
+import com.aliyuolalekan.portfolio.util.Constants.HEADER_FONT
+import com.aliyuolalekan.portfolio.util.Constants.MY_INTRO
 import com.aliyuolalekan.portfolio.util.Constants.SECTION_WIDTH
 import com.aliyuolalekan.portfolio.util.Res
 import com.aliyuolalekan.portfolio.util.Res.Image.mainImage
@@ -119,7 +120,7 @@ private fun MainText(breakpoint: Breakpoint) {
             P(
                 attrs = Modifier
                     .margin(topBottom = 0.px)
-                    .fontFamily(FONT_FAMILY)
+                    .fontFamily(HEADER_FONT)
                     .fontSize(
                         if (breakpoint >= Breakpoint.LG) 45.px
                         else 20.px
@@ -134,7 +135,7 @@ private fun MainText(breakpoint: Breakpoint) {
             P(
                 attrs = Modifier
                     .margin(top = 20.px, bottom = 0.px)
-                    .fontFamily(FONT_FAMILY)
+                    .fontFamily(HEADER_FONT)
                     .fontSize(
                         if (breakpoint >= Breakpoint.LG) 68.px
                         else 40.px
@@ -149,7 +150,7 @@ private fun MainText(breakpoint: Breakpoint) {
             P(
                 attrs = Modifier
                     .margin(top = 10.px, bottom = 5.px)
-                    .fontFamily(FONT_FAMILY)
+                    .fontFamily(HEADER_FONT)
                     .fontSize(20.px)
                     .fontWeight(FontWeight.Bold)
                     .color(Theme.Secondary.rgb)
@@ -162,14 +163,14 @@ private fun MainText(breakpoint: Breakpoint) {
                 attrs = Modifier
                     .margin(bottom = 25.px)
                     .maxWidth(400.px)
-                    .fontFamily(FONT_FAMILY)
+                    .fontFamily(HEADER_FONT)
                     .fontSize(15.px)
                     .fontStyle(FontStyle.Italic)
                     .fontWeight(FontWeight.Normal)
                     .color(Theme.Secondary.rgb)
                     .toAttrs()
             ) {
-                Text(LOREM_IPSUM_SHORTEST)
+                Text(MY_INTRO)
             }
 
             Button(

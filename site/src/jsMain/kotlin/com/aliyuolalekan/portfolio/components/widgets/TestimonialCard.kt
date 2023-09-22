@@ -18,6 +18,7 @@ import com.varabyte.kobweb.compose.ui.modifiers.fontWeight
 import com.varabyte.kobweb.compose.ui.modifiers.id
 import com.varabyte.kobweb.compose.ui.modifiers.margin
 import com.varabyte.kobweb.compose.ui.modifiers.maxWidth
+import com.varabyte.kobweb.compose.ui.modifiers.size
 import com.varabyte.kobweb.compose.ui.toAttrs
 import com.varabyte.kobweb.silk.components.graphics.Image
 import com.varabyte.kobweb.silk.components.style.breakpoint.Breakpoint
@@ -37,6 +38,10 @@ fun TestimonialCard(
         Image(
             modifier = Modifier
                 .margin(right = 20.px)
+                .size(
+                    if (breakpoint >= Breakpoint.MD) 160.px
+                    else 80.px
+                )
                 .maxWidth(
                     if (breakpoint >= Breakpoint.MD) 160.px
                     else 80.px
@@ -80,7 +85,7 @@ fun TestimonialCard(
                     ) {
                         Text(testimonial.profession)
                     }
-                    RatingBar(modifier = Modifier.margin(top = 10.px))
+                    RatingBar(modifier = Modifier.margin(top = 10.px), rating = testimonial.rating)
                 }
             }
             P(
