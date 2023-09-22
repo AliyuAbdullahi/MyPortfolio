@@ -24,7 +24,8 @@ fun initSilk(ctx: InitSilkContext) {
     ctx.stylesheet.registerBaseStyle("body") {
         Modifier.fontFamily(
             "Roboto", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Oxygen", "Ubuntu",
-            "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif", "Montserrat"
+            "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif", "Montserrat",
+            "GT Walsheim", "Georgia"
         )
     }
 }

@@ -11,7 +11,6 @@ import com.aliyuolalekan.portfolio.models.Theme
 import com.aliyuolalekan.portfolio.styles.AboutImageStyle
 import com.aliyuolalekan.portfolio.styles.AboutTextStyle
 import com.aliyuolalekan.portfolio.util.Constants
-import com.aliyuolalekan.portfolio.util.Constants.LOREM_IPSUM_LONG
 import com.aliyuolalekan.portfolio.util.Constants.SECTION_WIDTH
 import com.aliyuolalekan.portfolio.util.ObserveViewportEntered
 import com.aliyuolalekan.portfolio.util.Res
@@ -26,6 +25,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
+import com.aliyuolalekan.portfolio.util.Constants.MY_INFO
 import com.aliyuolalekan.portfolio.util.animatePercentage
 import com.varabyte.kobweb.compose.ui.modifiers.color
 import com.varabyte.kobweb.compose.ui.modifiers.fillMaxWidth
@@ -137,7 +137,7 @@ fun AboutMe() {
                 .color(Theme.Secondary.rgb)
                 .toAttrs()
         ) {
-            Text(LOREM_IPSUM_LONG)
+            Text(MY_INFO)
         }
         Skill.entries.forEach { skill ->
             SkillBar(

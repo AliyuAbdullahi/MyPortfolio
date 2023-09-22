@@ -64,8 +64,8 @@ private fun SocialLinks(row: Boolean = false) {
         FaLinkedin(
             modifier = SocialLinkStyle.toModifier()
                 .margin(
-                    bottom = if (row) 0.px else 40.px,
-                    right = if (row) 40.px else 0.px
+                    bottom = if (row) 0.px else 20.px,
+                    right = if (row) 20.px else 0.px
                 ),
             size = IconSize.LG
         )
@@ -77,8 +77,8 @@ private fun SocialLinks(row: Boolean = false) {
         FaTwitter(
             modifier = SocialLinkStyle.toModifier()
                 .margin(
-                    bottom = if (row) 0.px else 40.px,
-                    right = if (row) 40.px else 0.px
+                    bottom = if (row) 0.px else 10.px,
+                    right = if (row) 10.px else 0.px
                 ),
             size = IconSize.LG
         )

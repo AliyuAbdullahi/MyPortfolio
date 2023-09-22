@@ -88,7 +88,7 @@ private fun PortfolioCards(breakpoint: Breakpoint) {
         Portfolio.entries.forEach { portfolio ->
             PortfolioCard(
                 modifier = Modifier.margin(
-                    right = if (portfolio != Portfolio.Five) 25.px else 0.px
+                    right = if (portfolio != Portfolio.Six) 25.px else 0.px
                 ),
                 portfolio = portfolio
             )
