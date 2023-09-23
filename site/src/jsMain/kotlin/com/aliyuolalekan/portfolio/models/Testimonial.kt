@@ -1,6 +1,5 @@
 package com.aliyuolalekan.portfolio.models
 
-import com.aliyuolalekan.portfolio.util.Constants.LOREM_IPSUM_SHORT
 import com.aliyuolalekan.portfolio.util.Res
 
 enum class Testimonial(
@@ -11,32 +10,32 @@ enum class Testimonial(
     val rating: Float
 ) {
     First(
+        image = Res.Image.avatar4,
+        fullName = "Jessica Lorena",
+        profession = "Senior Android Engineer FREENOW",
+        review = "Working with Aliyu is an absolute pleasure. His unwavering commitment to staying at the forefront of the latest technologies, especially his passion for mastering Jetpack Compose, is truly remarkable. What sets him apart is not just his knowledge but his eagerness to share it with the team. He's always willing to teach and apply his expertise to our projects, ensuring that we're consistently ahead in adopting cutting-edge tech. With Aliyu on board, you can count on having the latest innovations at your fingertips, making teamwork both inspiring and effective.",
+        rating = 4.7F
+    ),
+    Second(
         image = Res.Image.avatar1,
         fullName = "Óscar Grande",
         profession = "Senior Android Engineer, FREENOW",
         review = "Pending",
         rating = 5.0F
     ),
-    Second(
+    Third(
         image = Res.Image.avatar2,
         fullName = "Idris Adetunbi",
         profession = "Mobile Software Engineer, Trivago",
         review = "An exceptional, energetic software engineer",
         rating = 5.0F
     ),
-    Third(
+    Fourth(
         image = Res.Image.avatar3,
         fullName = "Samira Badamestani",
         profession = "Senior Android Developer",
         review = "Pending",
         rating = 5.0F
-    ),
-    Fourth(
-        image = Res.Image.avatar4,
-        fullName = "Jessica Lorena",
-        profession = "Senior Android Engineer FREENOW",
-        review = "Pending",
-        rating = 4.7F
     ),
     Fifth(
         image = Res.Image.avatar5,
