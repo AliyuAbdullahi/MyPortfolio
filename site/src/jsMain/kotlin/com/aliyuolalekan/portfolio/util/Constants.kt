@@ -39,7 +39,7 @@ object Res {
         const val avatar2 = "avatar2.png"
         const val avatar3 = "avatar3.jpeg"
         const val avatar4 = "avatar4.jpeg"
-        const val avatar5 = "avatar5.png"
+        const val avatar5 = "avatar5.jpeg"
         const val avatar6 = "avatar6.png"
     }
 
