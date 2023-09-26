@@ -18,7 +18,7 @@ object Constants {
         "I started my backend service developmentt with with Node.js. I contributed to service used by Andela for managing Employee skill development. I picked up Spring boot recently and loving it so far."
 
     const val HOLIDAY_PIRATES_ROLE =
-        "At Holiday Pirates, in addition to making the Product imagination a reality, I also took the responsibility of Architecture Design, high quality code that is scalable and maintainable, offering flexibility for the solution of for future problems. I am also accountable for the application's security, testing, team collaboration, scrum master and release management."
+        "At Holiday Pirates, in addition to making the Product imagination a reality, I also took the responsibility of Architecture Design, high quality code that is scalable and maintainable, offering flexibility for the solution of future problems. I am also accountable for the application's security, testing, team collaboration, scrum master and release management."
     const val FREE_NOW_ROLE =
         "At FREE NOW, I was the first Mobile Engineer at the company\'s B2B Team, three years later, B2B was one of the core part of the business due to immense growth. I didn't only work on android application alone, I made myself available whenever any team needed help; Android, iOS or Web Frontend. I had the opportunity to collaborate with other amazing engineers in redefining the Design System by introducing Jetpack Compose and Swift UI. To improve the hiring process, I didn't only conduct technical interviews, but also worked with the Principal to refine the interview tools."
     const val ANDELA_ROLE =
