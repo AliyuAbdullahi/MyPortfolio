@@ -7,7 +7,6 @@ import com.aliyuolalekan.portfolio.models.Section
 import com.aliyuolalekan.portfolio.models.Theme
 import com.aliyuolalekan.portfolio.styles.MainButtonStyle
 import com.aliyuolalekan.portfolio.styles.MainImageStyle
-import com.aliyuolalekan.portfolio.util.Constants.FONT_FAMILY
 import com.aliyuolalekan.portfolio.util.Constants.HEADER_FONT
 import com.aliyuolalekan.portfolio.util.Constants.MY_INTRO
 import com.aliyuolalekan.portfolio.util.Constants.SECTION_WIDTH

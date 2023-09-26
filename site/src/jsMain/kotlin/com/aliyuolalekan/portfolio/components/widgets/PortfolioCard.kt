@@ -4,10 +4,8 @@ import androidx.compose.runtime.Composable
 import com.aliyuolalekan.portfolio.models.Portfolio
 import com.aliyuolalekan.portfolio.models.Theme
 import com.aliyuolalekan.portfolio.styles.PortfolioSectionStyle
-import com.aliyuolalekan.portfolio.util.Constants
 import com.aliyuolalekan.portfolio.util.Constants.FONT_FAMILY
 import com.aliyuolalekan.portfolio.util.Res
-import com.varabyte.kobweb.compose.css.FontStyle
 import com.varabyte.kobweb.compose.css.FontWeight
 import com.varabyte.kobweb.compose.css.ObjectFit
 import com.varabyte.kobweb.compose.css.TextDecorationLine
@@ -23,7 +21,6 @@ import com.varabyte.kobweb.compose.ui.modifiers.fillMaxHeight
 import com.varabyte.kobweb.compose.ui.modifiers.fillMaxWidth
 import com.varabyte.kobweb.compose.ui.modifiers.fontFamily
 import com.varabyte.kobweb.compose.ui.modifiers.fontSize
-import com.varabyte.kobweb.compose.ui.modifiers.fontStyle
 import com.varabyte.kobweb.compose.ui.modifiers.fontWeight
 import com.varabyte.kobweb.compose.ui.modifiers.id
 import com.varabyte.kobweb.compose.ui.modifiers.margin

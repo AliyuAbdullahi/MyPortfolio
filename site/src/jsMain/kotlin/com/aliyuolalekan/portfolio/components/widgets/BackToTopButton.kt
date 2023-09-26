@@ -2,9 +2,9 @@ package com.aliyuolalekan.portfolio.components.widgets
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
 import com.aliyuolalekan.portfolio.models.Theme
 import com.aliyuolalekan.portfolio.styles.BackToTopButtonStyle
@@ -70,8 +70,8 @@ fun BackToTopButton() {
                 )
                 .borderRadius(20.percent)
                 .margin(
-                    right = if(breakpoint <= Breakpoint.SM) 30.px else 40.px,
-                    bottom = if(breakpoint <= Breakpoint.SM) 30.px else 40.px
+                    right = if (breakpoint <= Breakpoint.SM) 30.px else 40.px,
+                    bottom = if (breakpoint <= Breakpoint.SM) 30.px else 40.px
                 )
                 .backgroundColor(Theme.Primary.rgb)
                 .cursor(Cursor.Pointer)

@@ -1,20 +1,19 @@
 package com.aliyuolalekan.portfolio.components.widgets
 
 import androidx.compose.runtime.Composable
-import com.aliyuolalekan.portfolio.models.Section
-import com.aliyuolalekan.portfolio.models.Theme
-import com.aliyuolalekan.portfolio.util.Constants
-import com.varabyte.kobweb.compose.css.FontWeight
-import com.varabyte.kobweb.compose.css.TextAlign
-import com.varabyte.kobweb.compose.foundation.layout.Box
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
+import com.aliyuolalekan.portfolio.models.Section
+import com.aliyuolalekan.portfolio.models.Theme
 import com.aliyuolalekan.portfolio.util.Constants.FONT_FAMILY
 import com.aliyuolalekan.portfolio.util.ObserveViewportEntered
 import com.varabyte.kobweb.compose.css.CSSTransition
+import com.varabyte.kobweb.compose.css.FontWeight
+import com.varabyte.kobweb.compose.css.TextAlign
+import com.varabyte.kobweb.compose.foundation.layout.Box
 import com.varabyte.kobweb.compose.foundation.layout.Column
 import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
@@ -96,8 +95,8 @@ fun SectionTitle(
                     else TextAlign.Start
                 )
                 .margin(
-                    left = if(alignment == Alignment.Start) subtitleMargin else 0.px,
-                    right = if(alignment == Alignment.CenterHorizontally) subtitleMargin else 0.px,
+                    left = if (alignment == Alignment.Start) subtitleMargin else 0.px,
+                    right = if (alignment == Alignment.CenterHorizontally) subtitleMargin else 0.px,
                     bottom = 10.px,
                     top = 0.px
                 )

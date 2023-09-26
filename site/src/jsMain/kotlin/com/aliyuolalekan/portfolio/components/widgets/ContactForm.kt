@@ -106,7 +106,7 @@ fun ContactForm(breakpoint: Breakpoint) {
         ) {
             Text("Message")
         }
-        TextArea (
+        TextArea(
             attrs = InputStyle.toModifier()
                 .id("inputMessage")
                 .classNames("form-control")

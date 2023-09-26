@@ -1,15 +1,14 @@
 package com.aliyuolalekan.portfolio.components.sections
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import com.aliyuolalekan.portfolio.components.widgets.ExperienceCard
 import com.aliyuolalekan.portfolio.components.widgets.SectionTitle
 import com.aliyuolalekan.portfolio.models.Experience
 import com.aliyuolalekan.portfolio.models.Section
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.setValue
-import com.aliyuolalekan.portfolio.util.Constants
 import com.aliyuolalekan.portfolio.util.Constants.SECTION_WIDTH
 import com.aliyuolalekan.portfolio.util.ObserveViewportEntered
 import com.varabyte.kobweb.compose.foundation.layout.Box
