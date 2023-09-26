@@ -24,10 +24,11 @@ enum class Testimonial(
         rating = 4.7F
     ),
     Third(
-        image = Res.Image.avatar1,
-        fullName = "Óscar Grande",
-        profession = "Senior Android Engineer, FREENOW",
-        review = "Pending",
+        image = Res.Image.avatar3,
+        fullName = "Samira Badamestani",
+        profession = "Senior Android Developer, FREENOW",
+        review = "I wanted to take a moment to express my sincere thanks for the incredible experience of working with you in our jetpack compose workgroup. Your expertise, guidance and willingness to share your knowledge have been invaluable to me. I've learned so much from you and I'm truly grateful for the opportunity.\n" +
+                "I look forward to more collaborations in the future and contributing to growing together.",
         rating = 5.0F
     ),
     Fourth(
@@ -38,17 +39,17 @@ enum class Testimonial(
         rating = 5.0F
     ),
     Fifth(
-        image = Res.Image.avatar3,
-        fullName = "Samira Badamestani",
-        profession = "Senior Android Developer, FREENOW",
-        review = "Pending",
+        image = Res.Image.avatar1,
+        fullName = "Óscar Grande",
+        profession = "Senior Android Engineer, FREENOW",
+        review = "",
         rating = 5.0F
     ),
     Sixth(
         image = Res.Image.avatar6,
-        fullName = "Jannik Hell",
+        fullName = "Anderson Armani",
         profession = "Senior Software Engineer at FREENOW",
-        review = "Pending",
-        rating = 4.0F
+        review = "",
+        rating = 5.0F
     )
 }

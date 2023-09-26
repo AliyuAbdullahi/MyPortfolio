@@ -5,7 +5,6 @@ import com.aliyuolalekan.portfolio.components.widgets.SectionTitle
 import com.aliyuolalekan.portfolio.components.widgets.ServiceCard
 import com.aliyuolalekan.portfolio.models.Section
 import com.aliyuolalekan.portfolio.models.Service
-import com.aliyuolalekan.portfolio.styles.ServiceCardStyle
 import com.aliyuolalekan.portfolio.util.Constants
 import com.varabyte.kobweb.compose.foundation.layout.Box
 import com.varabyte.kobweb.compose.foundation.layout.Column
@@ -19,7 +18,6 @@ import com.varabyte.kobweb.compose.ui.modifiers.padding
 import com.varabyte.kobweb.silk.components.layout.SimpleGrid
 import com.varabyte.kobweb.silk.components.layout.numColumns
 import com.varabyte.kobweb.silk.components.style.breakpoint.Breakpoint
-import com.varabyte.kobweb.silk.components.style.toModifier
 import com.varabyte.kobweb.silk.theme.breakpoint.rememberBreakpoint
 import org.jetbrains.compose.web.css.percent
 import org.jetbrains.compose.web.css.px
