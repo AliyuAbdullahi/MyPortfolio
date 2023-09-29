@@ -42,7 +42,9 @@ enum class Testimonial(
         image = Res.Image.avatar1,
         fullName = "Óscar Grande",
         profession = "Senior Android Engineer, FREENOW",
-        review = "",
+        review = "I've been lucky to work in the same team as Aliyu since I joined FREENOW. From the very beginning, he was always willing to lead initiatives such as the migration to Jetpack Compose, where he played a major role in creating the components of our Design System.\n" +
+                "Aliyu has also the ability to communicate highly technical terms in a very simple way, which allows him to address a wide variety of both technical and product audiences.\n" +
+                "Speaking from a purely Android point of view, Aliyu masters the ecosystem, so it can perform both purely frontend as well as business logic implementations.",
         rating = 5.0F
     ),
     Sixth(
